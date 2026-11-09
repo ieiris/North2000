@@ -85,6 +85,7 @@ public class MainMenu extends RootLayout {
 		panel.add(btnProducts);
 
 		JButton btnReports = new JButton("Reports Menu");
+		btnReports.setEnable(false);
 		btnReports.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				FrmReportMenu menu = new FrmReportMenu();
