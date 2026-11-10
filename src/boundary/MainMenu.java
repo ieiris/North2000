@@ -52,13 +52,15 @@ public class MainMenu extends RootLayout {
 		
 		JButton btnEmployees = new JButton("Employees");
 		btnEmployees.setPreferredSize(new Dimension(100, 25));
+		btnEmployees.setEnabled(false);
+		/*
 		btnEmployees.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new FrmEmployees().setVisible(true);
 				JFrame f1 = (JFrame) SwingUtilities.windowForComponent(panel);
 				f1.dispose();
 			}
-		});
+		});*/
 		
 		JButton btnSuppliers = new JButton("Suppliers");
 		btnSuppliers.setEnabled(false);
@@ -66,13 +68,15 @@ public class MainMenu extends RootLayout {
 		
 		JButton btnOrders = new JButton("Orders");
 		btnOrders.setPreferredSize(new Dimension(100, 25));
+		btnOrders.setEnabled(false);
+		/*
 		btnOrders.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new FrmOrders().setVisible(true);
 				JFrame f1 = (JFrame) SwingUtilities.windowForComponent(panel);
 				f1.dispose();
 			}
-		});
+		});*/
 		
 		JButton btnProducts = new JButton("Products");
 		btnProducts.setEnabled(false);
@@ -85,13 +89,15 @@ public class MainMenu extends RootLayout {
 		panel.add(btnProducts);
 
 		JButton btnReports = new JButton("Reports Menu");
+		btnReports.setEnabled(false);
+		/*
 		btnReports.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				FrmReportMenu menu = new FrmReportMenu();
 				menu.setLocationRelativeTo(null);
 				menu.setVisible(true);
 			}
-		});
+		});*/
 
 		JPanel panelDataTransfer = new JPanel();
 		panelDataTransfer.setBorder(new TitledBorder(new MatteBorder(1, 1, 1, 1, Color.LIGHT_GRAY), "Customer Data (XML / JSON)"));

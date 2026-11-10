@@ -30,8 +30,8 @@ public class RootLayout extends JFrame {
 
 	private JPanel contentPane;
 	static RootLayout frame;
-	private FrmOrders ordersPanel;
-	private FrmEmployees mngEmployees;
+	//private FrmOrders ordersPanel;
+	//private FrmEmployees mngEmployees;
 	private JMenu mnHome;
 	private JMenu mnOrders;
 	private JMenu mnEmployees;
@@ -118,6 +118,8 @@ public class RootLayout extends JFrame {
 			mnSuppliers.setEnabled(false);
 			
 			mnOrders = new JMenu("Orders");
+			mnOrders.setEnabled(false);
+			/*
 			mnOrders.addMenuListener(new MenuListener() {
 				public void menuCanceled(MenuEvent e) {
 				}
@@ -131,7 +133,7 @@ public class RootLayout extends JFrame {
 					
 					
 				}
-			});
+			});*/
 			mnOrders.addActionListener((ActionEvent event) -> {
 	            System.exit(0);
 	           
@@ -145,6 +147,8 @@ public class RootLayout extends JFrame {
 			mnProducts.setEnabled(false);
 			
 			mnEmployees = new JMenu("Employees");
+			mnEmployees.setEnabled(false);
+			/*
 			mnEmployees.addMenuListener(new MenuListener() {
 				public void menuCanceled(MenuEvent e) {
 				}
@@ -157,10 +161,12 @@ public class RootLayout extends JFrame {
 					f1.dispose();
 					
 				}
-			});
+			});*/
 			menuBar.add(mnEmployees);
 
 			JMenu mnReports = new JMenu("Reports");
+			mnReports.setEnabled(false);
+			/*
 			mnReports.addMenuListener(new MenuListener() {
 				public void menuCanceled(MenuEvent e) {}
 				public void menuDeselected(MenuEvent e) {}
@@ -169,7 +175,7 @@ public class RootLayout extends JFrame {
 					reportMenu.setLocationRelativeTo(null);
 					reportMenu.setVisible(true);
 				}
-			});
+			});*/
 			menuBar.add(mnReports);
 
 			JMenu mnData = new JMenu("XML / JSON");
