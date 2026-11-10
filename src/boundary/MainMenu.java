@@ -85,14 +85,15 @@ public class MainMenu extends RootLayout {
 		panel.add(btnProducts);
 
 		JButton btnReports = new JButton("Reports Menu");
-		btnReports.setEnable(false);
+		btnReports.setEnabled(false);
+		/*
 		btnReports.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				FrmReportMenu menu = new FrmReportMenu();
 				menu.setLocationRelativeTo(null);
 				menu.setVisible(true);
 			}
-		});
+		});*/
 
 		JPanel panelDataTransfer = new JPanel();
 		panelDataTransfer.setBorder(new TitledBorder(new MatteBorder(1, 1, 1, 1, Color.LIGHT_GRAY), "Customer Data (XML / JSON)"));

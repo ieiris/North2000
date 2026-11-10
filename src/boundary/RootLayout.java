@@ -161,6 +161,7 @@ public class RootLayout extends JFrame {
 			menuBar.add(mnEmployees);
 
 			JMenu mnReports = new JMenu("Reports");
+			mnReports.setEnabled(false);/*
 			mnReports.addMenuListener(new MenuListener() {
 				public void menuCanceled(MenuEvent e) {}
 				public void menuDeselected(MenuEvent e) {}
@@ -169,7 +170,7 @@ public class RootLayout extends JFrame {
 					reportMenu.setLocationRelativeTo(null);
 					reportMenu.setVisible(true);
 				}
-			});
+			});*/
 			menuBar.add(mnReports);
 
 			JMenu mnData = new JMenu("XML / JSON");
